@@ -1,0 +1,214 @@
+<div class="container">
+	<header class="header">
+	  <h1 id="title" class="text-center">Formulario de Encuesta</h1>
+	  <p id="description" class="description text-center">
+		Gracias por participar en nuestra encuesta.
+	  </p>
+	  <link href="style.css" rel="stylesheet">
+	</header>
+	<form id="survey-form">
+	  <div class="form-group">
+		<label id="name-label" for="name">Nombre</label>
+		<input
+		  type="text"
+		  name="name"
+		  id="name"
+		  class="form-control"
+		  placeholder="Ingrese su nombre"
+		  required
+		/>
+	  </div>
+	  <div class="form-group">
+		<label id="email-label" for="email">Email</label>
+		<input
+		  type="email"
+		  name="email"
+		  id="email"
+		  class="form-control"
+		  placeholder="Ingrese su Email"
+		  required
+		/>
+	  </div>
+	  <div class="form-group">
+		<label id="number-label" for="number"
+		  >Edad<span class="clue">(opcional)</span></label
+		>
+		<input
+		  type="nombre"
+		  name="edad"
+		  id="nombre"
+		  min="10"
+		  max="99"
+		  class="form-control"
+		  placeholder="Edad"
+		/>
+	  </div>
+	  <div class="form-group">
+		<p>Que opcion describe mejor su funcion actual?</p>
+		<select id="dropdown" name="rol" class="form-control" required>
+		  <option disabled selected value>Seleccione su rol Actual</option>
+		  <option value="estudiante">Estudiante</option>
+		  <option value="part_time">Trabajo de tiempo part-time</option>
+		  <option value="full_time">Trabajo de tiempo full-time</option>
+		  <option value="jubilado_pensionado">Jubilado o Pensionado</option>
+		  <option value="otros">Otros</option>
+		</select>
+	  </div>
+  
+	  <div class="form-group">
+		<p>Recomendaria ArgentinaPrograma a un amigo?</p>
+		<label>
+		  <input
+			name="user-recomendacion"
+			value="definitivamente"
+			type="radio"
+			class="input-radio"
+			checked
+		  />Definitivamente</label
+		>
+		<label>
+		  <input
+			name="user-recomendacion"
+			value="probablemente"
+			type="radio"
+			class="input-radio"
+		  />Probablemente lo recomendaria</label
+		>
+  
+		<label
+		  ><input
+			name="user-recomendacion"
+			value="no"
+			type="radio"
+			class="input-radio"
+		  />No lo recomendaria</label
+		>
+	  </div>
+  
+	  <div class="form-group">
+		<p>
+			Que es lo que te gusta mas de ArgentinaPrograma?
+		</p>
+		<select id="most-like" name="mostLike" class="form-control" required>
+		  <option disabled selected value>Seleccione un opcion</option>
+		  <option value="retos">Retos</option>
+		  <option value="proyectos">Proyectos</option>
+		  <option value="comunidad">Comunidad</option>
+		  <option value="fuente abierta">Fuente Abierta</option>
+		</select>
+	  </div>
+  
+	  <div class="form-group">
+		<p>
+		  Que te gustaria que mejore?
+		  <span class="clue">(Marque todas las que correspondan)</span>
+		</p>
+  
+		<label
+		  ><input
+			name="preferencia"
+			value="proyectos-front-end"
+			type="checkbox"
+			class="input-checkbox"
+		  />Proyectos Front-end </label
+		>
+		<label>
+		  <input
+			name="preferencia"
+			value="proyectos-back-end"
+			type="checkbox"
+			class="input-checkbox"
+		  />Proyectos Back-end </label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="visualizacion-datos"
+			type="checkbox"
+			class="input-checkbox"
+		  />Visualizacion de Datos</label
+		>
+		<label
+		  ><input
+			name="prefer"
+			value="challenges"
+			type="checkbox"
+			class="input-checkbox"
+		  />Challenges</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="comunidad-codigo-abierto"
+			type="checkbox"
+			class="input-checkbox"
+		  />Comunidad de codigo abierto</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="sala-ayuda-discord"
+			type="checkbox"
+			class="input-checkbox"
+		  />Sala de ayuda Discord</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="videos"
+			type="checkbox"
+			class="input-checkbox"
+		  />Videos</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="encuentros-virtuales"
+			type="checkbox"
+			class="input-checkbox"
+		  />Encuentros Virtuales</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="plataforma"
+			type="checkbox"
+			class="input-checkbox"
+		  />Plataforma</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="foro"
+			type="checkbox"
+			class="input-checkbox"
+		  />Foro</label
+		>
+		<label
+		  ><input
+			name="preferencia"
+			value="cursos-adicionales"
+			type="checkbox"
+			class="input-checkbox"
+		  />Cursos Adicionales</label
+		>
+	  </div>
+  
+	  <div class="form-group">
+		<p>Algun comentario o sugerencias?</p>
+		<textarea
+		  id="commentario"
+		  class="input-textarea"
+		  name="comment"
+		  placeholder="Ingrese su comentario aqui..."
+		></textarea>
+	  </div>
+  
+	  <div class="form-group">
+		<button type="enviar" id="enviar" class="submit-button">
+		  Enviar
+		</button>
+	  </div>
+	</form>
+  </div>
+  
